@@ -24,3 +24,12 @@ If instead you get a message saying `python` is not a recognized command, double
 To add Python to your PATH, go to Start > Control Panel > System and Security > System > Advanced System Settings > Environment Variables. Alternatively, you can run `sysdm.cpl` in the command prompt, go to the "Advanced" tab in the popup window, then click Environment Variables.
 
 Regardless, you should see a new popup window. In the "System variables", select "Path" and click "Edit".
+
+### Getting Pip
+Pip should come prepackaged in Python 2.7.9 and later (for python 2) or Python 3.4 and later (for python 3). To check if pip is installed already, run the following in the command line:
+
+        pip -V
+
+This should print the current version of pip installed. 
+
+If `pip` is not a recognized command then you can install pip by following the steps [here](https://pip.pypa.io/en/latest/installing.html#id7).
