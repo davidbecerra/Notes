@@ -5,11 +5,11 @@ Download Python from this [link](https://www.python.org/downloads/). Here, you c
 
 Navigate to your Downloads directory and double click the MSI Python file that was just downloaded.
 
-<img src='python_download.png' style='max-width:853px; width:90%' alt="Python MSI file">
+<img src='../_images/python_download.png' style='max-width:853px; width:90%' alt="Python MSI file">
 
 If a Security Warning window pops up, click "Run", then navigate through the installer.
 
-<img src='download_warning.png' style='max-width:853px; width:70%' alt="Download Security Warning">
+<img src='../_images/download_warning.png' style='max-width:853px; width:70%' alt="Download Security Warning">
 
 To verify Python was successfully installed, open the command prompt (Start > type "cmd" in "Search programs and files") and enter:
 
@@ -17,7 +17,7 @@ To verify Python was successfully installed, open the command prompt (Start > ty
 
 You should see the currently installed Python version.
 
-<img src='python_check.png' style='width:80%' alt='Python command line version number.'>
+<img src='../_images/python_check.png' style='width:80%' alt='Python command line version number.'>
 
 If instead you get a message saying `python` is not a recognized command, double check that the Python directory is in your PAtH Environment variable.
 

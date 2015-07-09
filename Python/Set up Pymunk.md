@@ -42,7 +42,7 @@ Install the wheels package using pip:
 #### Getting Pygame
 Finally, we can install pygame. Go to this [link](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame) and you should see several Pygame files.
 
-<img src='Pygame.png' class='' style='max-width:853px; width:100%' alt='Pygame files'>
+<img src='../_images/Pygame.png' class='' style='max-width:853px; width:100%' alt='Pygame files'>
 
 Download the <code>*win32.whl</code> file that has the proper Python version. For example, if you have Python 2.7, download <code>pygame-1.9.2a0-cp27-none-win32.whl</code>.
 
@@ -57,7 +57,7 @@ For example, if you downloaded <code>pygame-1.9.2a0-cp27-none-win32.whl</code> t
 ### Check
 To check that you have all the proper packages you can run: <code>pip freeze</code>. If you correctly installed the packages, you should see:
 
-<img src='Correct_pip.png' class='' style='max-width:853px; width:60%' alt='Pygame files'>
+<img src='../_images/Correct_pip.png' class='' style='max-width:853px; width:60%' alt='Pygame files'>
 
 Of course, the version of each package may be different on your computer.
 
