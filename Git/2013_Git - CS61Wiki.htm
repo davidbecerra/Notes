@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>2013/Git - CS61Wiki</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.1">
+<link rel="shortcut icon" href="http://cs61.seas.harvard.edu/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://cs61.seas.harvard.edu/cs61wiki/opensearch_desc.php" title="CS61Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://cs61.seas.harvard.edu/cs61wiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="CS61Wiki Atom feed" href="http://cs61.seas.harvard.edu/cs61wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="2013_Git%20-%20CS61Wiki_files/load_002.css">
+<style>
+.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.autoellipsis-matched,.highlight{font-weight:bold}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:9780324491b653a3780e2d029bdc140c */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{text-decoration:none;color:black}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:52b1797f70c7e4094dfa4191101944e8 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="2013_Git%20-%20CS61Wiki_files/load.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:7a3748d34e6456ae8d0f053363f745f7 */</style>
+
+<script src="2013_Git%20-%20CS61Wiki_files/load.php"></script><script src="2013_Git%20-%20CS61Wiki_files/load_003.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"2013/Git","wgTitle":"2013/Git","wgCurRevisionId":2589,"wgArticleId":340,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"2013/Git","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: wikidb:resourceloader:filter:minify-js:7:5e9d6f662546365d82558dd92b2a2224 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="2013_Git%20-%20CS61Wiki_files/load_002.php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/cs61wiki/skins/vector/csshover.min.htc")}</style><![endif]--><script src="2013_Git%20-%20CS61Wiki_files/load_004.php" async=""></script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-2013_Git skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">2013/Git</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From CS61Wiki</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><center><span style="color:#ad1b71; font-size:larger"><b>Computer Science 61 and E61</b></span><br><span>Systems Programming and Machine Organization</span></center>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Git"><span class="tocnumber">1</span> <span class="toctext">Git</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Introduction"><span class="tocnumber">1.1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Repositories"><span class="tocnumber">1.2</span> <span class="toctext">Repositories</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Creating_a_repository"><span class="tocnumber">1.3</span> <span class="toctext">Creating a repository</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Committing"><span class="tocnumber">1.4</span> <span class="toctext">Committing</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Logging"><span class="tocnumber">1.5</span> <span class="toctext">Logging</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Branches"><span class="tocnumber">1.6</span> <span class="toctext">Branches</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Diffs"><span class="tocnumber">1.7</span> <span class="toctext">Diffs</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Undoing_changes"><span class="tocnumber">1.8</span> <span class="toctext">Undoing changes</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Adding_files"><span class="tocnumber">1.9</span> <span class="toctext">Adding files</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Removing_and_renaming_files"><span class="tocnumber">1.10</span> <span class="toctext">Removing and renaming files</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Status"><span class="tocnumber">1.11</span> <span class="toctext">Status</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Partial_commits"><span class="tocnumber">1.12</span> <span class="toctext">Partial commits</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Remotes"><span class="tocnumber">1.13</span> <span class="toctext">Remotes</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Merges"><span class="tocnumber">1.14</span> <span class="toctext">Merges</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Conflicts"><span class="tocnumber">1.15</span> <span class="toctext">Conflicts</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Fast_forwards"><span class="tocnumber">1.16</span> <span class="toctext">Fast forwards</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Pulls"><span class="tocnumber">1.17</span> <span class="toctext">Pulls</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Pushes"><span class="tocnumber">1.18</span> <span class="toctext">Pushes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#More"><span class="tocnumber">2</span> <span class="toctext">More</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h1> <span class="mw-headline" id="Git"> Git </span></h1>
+<p><a rel="nofollow" class="external text" href="http://git-scm.com/">Git</a> is a version control system.
+</p>
+<h2> <span class="mw-headline" id="Introduction"> Introduction </span></h2>
+<p>So you’re working on a problem set. You start with the problem set handout.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git001.png" class="image"><img alt="Git001.png" src="2013_Git%20-%20CS61Wiki_files/146px-Git001.png" srcset="/cs61wiki/images/7/73/Git001.png 1.5x, /cs61wiki/images/7/73/Git001.png 2x" height="180" width="146"></a>
+</p><p>You change it some.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git002.png" class="image"><img alt="Git002.png" src="2013_Git%20-%20CS61Wiki_files/148px-Git002.png" srcset="/cs61wiki/images/a/a6/Git002.png 1.5x, /cs61wiki/images/a/a6/Git002.png 2x" height="180" width="148"></a>
+</p><p>And some more.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git003.png" class="image"><img alt="Git003.png" src="2013_Git%20-%20CS61Wiki_files/148px-Git003.png" srcset="/cs61wiki/images/3/3f/Git003.png 1.5x, /cs61wiki/images/3/3f/Git003.png 2x" height="180" width="148"></a>
+</p><p>But wait a minute: somewhere in this latest version, you made a 
+mistake! Oh no! But there are so many changes—which one is at fault?
+</p><p>If only you could find out <i>how the file changed</i>! If only you had a program that remembered <b>every version</b> of your file:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git004.png" class="image"><img alt="Git004.png" src="2013_Git%20-%20CS61Wiki_files/167px-Git004.png" srcset="/cs61wiki/images/thumb/0/02/Git004.png/250px-Git004.png 1.5x, /cs61wiki/images/0/02/Git004.png 2x" height="180" width="167"></a>
+</p><p>And could highlight differences:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git005.png" class="image"><img alt="Git005.png" src="2013_Git%20-%20CS61Wiki_files/430px-Git005.png" srcset="/cs61wiki/images/a/a5/Git005.png 1.5x, /cs61wiki/images/a/a5/Git005.png 2x" height="180" width="430"></a>
+</p><p>This is what version control systems do. Git is a version control system.
+</p>
+<h2> <span class="mw-headline" id="Repositories"> Repositories </span></h2>
+<p>Git works in units called <i>repositories</i>. A git repository contains two main pieces: the <i>version repository</i> and the <i>working copy</i>.
+</p><p>The working copy consists of normal files arranged in a directory
+ structure. The version repository stores previous versions of these 
+files and directories. We’ll draw them like this:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git006.png" class="image"><img alt="Git006.png" src="2013_Git%20-%20CS61Wiki_files/Git006.png" height="318" width="552"></a>
+</p><p>Remember, though, that a working copy usually contains many 
+files, not just one, and each version in the repository is a snapshot of
+ many files’ states, not just one file’s state.
+</p><p>Each version in the repository is called a <i>commit</i>, and each commit has a unique name. The name is a 40-character hexadecimal string, derived from a <a rel="nofollow" class="external text" href="http://en.wikipedia.org/SHA-1">SHA-1</a> cryptographic hash of the commit’s contents and its previous history. (There are 2<sup>160</sup> possible commit hashes.)
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git007.png" class="image"><img alt="Git007.png" src="2013_Git%20-%20CS61Wiki_files/Git007.png" height="289" width="560"></a>
+</p><p>Luckily you can abbreviate these names to unique prefixes. Only 5
+ or 6 characters are usually required to uniquely identify a commit in 
+the current repository, but you can type as many as you want.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git008.png" class="image"><img alt="Git008.png" src="2013_Git%20-%20CS61Wiki_files/Git008.png" height="289" width="394"></a>
+</p>
+<h2> <span class="mw-headline" id="Creating_a_repository"> Creating a repository </span></h2>
+<p>To create a repository in the current directory—for instance, when you’re starting a new project—just run <code>git init</code>. This will make a blank repository with no commits.
+</p><p>It’s more common, though, to make a copy of an existing 
+repository, such as one on code.seas.harvard.edu. The command for that 
+is <code>git clone URL</code>, where <code>URL</code> names the “upstream” repository you want to clone. For example:
+</p>
+<pre>% git clone git@code.seas.harvard.edu:~kohler/cs61/cs61-psets.git</pre>
+<p>will create a new repository on your machine, placing it in the <code>cs61-psets</code> directory. The repository is initialized with a copy of the commits in <code>git@code.seas.harvard.edu:~kohler/cs61/cs61-psets.git</code>.
+</p><p>The <code>URL</code> you pass to <code>git clone</code> is normally an SSH URL, such as that above. SSH URLs allow you to <a href="#Pushes">push your changes</a> back to the upstream repository. But other forms are possible too. For example, URLs like <code><a rel="nofollow" class="external free" href="git://code.seas.harvard.edu/cs61/cs61-psets.git">git://code.seas.harvard.edu/cs61/cs61-psets.git</a></code> can be used to clone public repositories. You can even create a local copy of a repository with <code>git clone OLDDIRECTORY NEWDIRECTORY</code>.
+</p>
+<h2> <span class="mw-headline" id="Committing"> Committing </span></h2>
+<p>Say you make an edit to your working copy.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git009.png" class="image"><img alt="Git009.png" src="2013_Git%20-%20CS61Wiki_files/Git009.png" height="302" width="540"></a>
+</p><p>This edit is <i>not</i> part of your version repository yet. Git doesn’t automatically track every change.
+</p><p>The <code>git commit -a</code> command takes a snapshot of your current working copy and saves it in the version repository.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git010.png" class="image"><img alt="Git010.png" src="2013_Git%20-%20CS61Wiki_files/Git010.png" height="400" width="560"></a>
+</p><p>The <code>-a</code> means “commit <i>all</i> changes in the working copy.”
+</p><p>As part of the commit process, you’ll be required to enter a <i>commit message</i>.
+ This describes the commit. It’s best to enter something that will be 
+meaningful to you later, but don’t let that stop you from committing 
+early and often.
+</p><p>Once you’ve entered a commit message, git will create the new commit’s hash
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git011.png" class="image"><img alt="Git011.png" src="2013_Git%20-%20CS61Wiki_files/Git011.png" height="331" width="560"></a>
+</p><p>and report it to you.
+</p>
+<pre>% git commit -a
+[master 0716b85] More
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+</pre>
+<h2> <span class="mw-headline" id="Logging"> Logging </span></h2>
+<p>The <code>git log</code> command reports all of the commits in your 
+current history. It lists them in reverse order, so the most recent 
+commit comes first.
+</p>
+<pre>% git log
+commit 1c1bbc3eb93e0ea44d138cb35c77f225b6ce7b54
+Author: Eddie Kohler &lt;ekohler@gmail.com&gt;
+Date:   Thu Sep 20 20:42:04 2012 -0400
+
+    compare.pl: {Spaces}??? -- the&nbsp;??? can be preceded by any number of spaces.
+    
+    Thanks to Kenneth Ho.
+
+commit a20ef24d4824c499db2d2211f87281ce2065446b
+Author: Eddie Kohler &lt;ekohler@gmail.com&gt;
+Date:   Tue Sep 18 08:52:42 2012 -0400
+
+    Add and update boundary write error tests.
+
+commit 6240b8872becb52531d92ff373f40f4aea291365
+Author: Eddie Kohler &lt;ekohler@gmail.com&gt;
+Date:   Fri Sep 14 21:23:34 2012 -0400
+
+    Initial commit of problem set 1.
+</pre>
+<p>My favorite way to log commits is <code>git log -p</code>. This shows, with each commit, the <i>difference</i> between that commit and the previous commit. The difference is called a <b>patch</b> (thus the <code>-p</code>).
+</p>
+<pre>% git log -p
+commit 1c1bbc3eb93e0ea44d138cb35c77f225b6ce7b54
+Author: Eddie Kohler &lt;ekohler@gmail.com&gt;
+Date:   Thu Sep 20 20:42:04 2012 -0400
+
+    compare.pl: {Spaces}??? -- the&nbsp;??? can be preceded by any number of spaces.
+    
+    Thanks to Kenneth Ho.
+
+diff --git a/pset1/compare.pl b/pset1/compare.pl
+index b9faaed..6e5fbf8 100644
+--- a/pset1/compare.pl
++++ b/pset1/compare.pl
+@@ -18,6 +18,7 @@ while (defined($_ = &lt;EXPECTED&gt;)) {
+                  "r" =&gt; "", "match" =&gt; []};
+        foreach my $x (split(/(\?\?\?|\?\?\{.*?\}(?:=\w+)?\?\?)/)) {
+            if ($x eq "???") {
++               $m-&gt;{r} =~ s{(\\ )+$}{\\s+};
+                $m-&gt;{r} .= ".*";
+            } elsif ($x =~ /\A\?\?\{(.*)\}=(\w+)\?\?\z/) {
+                $m-&gt;{r} .= "(" . $1 . ")";
+
+commit a20ef24d4824c499db2d2211f87281ce2065446b
+Author: Eddie Kohler &lt;ekohler@gmail.com&gt;
+Date:   Tue Sep 18 08:52:42 2012 -0400
+
+    Add and update boundary write error tests.
+
+diff --git a/pset1/test020.c b/pset1/test020.c
+index 0f59130..42e0ca5 100644
+--- a/pset1/test020.c
++++ b/pset1/test020.c
+@@ -2,7 +2,7 @@
+ #include &lt;stdio.h&gt;
+ #include &lt;assert.h&gt;
+ #include &lt;string.h&gt;
+-// test020: check for wild writes off the end of the allocated block.
++// test020: check for boundary write errors off the end of an allocated block.
+ 
+ int main() {
+     int *ptr = (int *) malloc(sizeof(int) * 10);
+diff --git a/pset1/test027.c b/pset1/test027.c
+...
+</pre>
+<p>It is valuable to learn how to read patches. Compared to the previous commit, a commit deletes the lines indicated by <code>-</code> and adds new lines indicated by <code>+</code>. Lines that start with a space weren’t changed; they’re provided for context. <a href="http://cs61.seas.harvard.edu/wiki/2013/Diff" title="2013/Diff">(Learn more about diffs)</a>
+</p>
+<h2> <span class="mw-headline" id="Branches"> Branches </span></h2>
+<p>Git commits are arranged into lists called <i>branches</i>. The most important branch is <code>master</code>. This is the default branch; it’s created whenever you initialize a new git repository.
+</p><p>Remember what git printed when you committed?
+</p>
+<pre>% git commit -a
+[master 0716b85] More
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+</pre>
+<p>Now you know what <code>master</code> means. This commit changed the <code>master</code> branch.
+</p><p>Git can support many branches, not just <code>master</code>. Furthermore, a branch can involve actual branching points, rather than a linear sequence of commits.
+</p><p>A branch name, such as “<code>master</code>,” also names a 
+commit, namely the most recent commit on that branch. This most recent 
+commit changes over time as you add new commits. Commit hashes, in 
+contrast, are stable: a commit hash always means the same version.
+</p>
+<h2> <span class="mw-headline" id="Diffs"> Diffs </span></h2>
+<p><b><a href="http://cs61.seas.harvard.edu/wiki/2013/Diff" title="2013/Diff">Main article on diffs</a></b>
+</p><p>Comparing different versions of your code is incredibly valuable,
+ and one of the best reasons to use a version control system. Git 
+presents differences in what’s called the <i>unified diff</i> format.
+</p><p>There are a couple main patterns for calling <code>git diff</code>.
+</p>
+<ul><li> Run <code>git diff</code> (with no arguments) to see the 
+differences between your current commit (plus the staging area; see 
+below) and your working copy.
+</li><li> Run <code>git diff COMMIT</code> to see the difference between a named commit and your working copy.
+</li><li> Run <code>git diff COMMIT1 COMMIT2</code> to see the differences between the two named commits.
+</li></ul>
+<p>If <code>git diff</code> reports too much information, then try <code>git diff FILENAME</code> (or <code>git diff COMMIT1 COMMIT2 FILENAME</code>), which prints just the differences to FILENAME.
+</p>
+<h2> <span class="mw-headline" id="Undoing_changes"> Undoing changes </span></h2>
+<p>To undo changes to a file’s working copy, use <code>git checkout FILENAME</code>. This permanently throws away your changes and rolls back to the most-recently-committed version of <code>FILENAME</code>. You can also roll back to an earlier version: try <code>git checkout COMMIT FILENAME</code>.
+</p>
+<h2> <span class="mw-headline" id="Adding_files"> Adding files </span></h2>
+<p><code>git commit -a</code> commits changes to all the files that git knows about. But you may sometimes want to add a <i>new</i> file to the repository—to tell git to start tracking another file. This requires the <code>git add</code> command:
+</p>
+<pre>% git add FILENAME
+% git commit -a
+</pre>
+<p>The <code>git add</code> command doesn’t actually commit the change. Instead, git adds the file to an invisible <i>staging area</i> that holds changes until the <i>next</i> commit. That’s why we follow <code>git add</code> with <code>git commit -a</code>.
+</p>
+<h2> <span class="mw-headline" id="Removing_and_renaming_files"> Removing and renaming files </span></h2>
+<p>To remove a file from the version repository, use <code>git rm FILENAME</code>. Like <code>git add</code>, this affects the working tree and staging area; a separate <code>git commit</code> is required to really change the version repository. To rename a file, use <code>git mv OLDFILENAME NEWFILENAME</code> (and then commit).
+</p>
+<h2> <span class="mw-headline" id="Status"> Status </span></h2>
+<p>The <code>git status</code> command reports on the current state of your working copy. Here's an example:
+</p>
+<pre>% git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 6 commits.
+#
+# Changes not staged for commit:
+#   (use "git add &lt;file&gt;..." to update what will be committed)
+#   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+#
+#       modified:   pset1/README.txt
+#
+# Untracked files:
+#   (use "git add &lt;file&gt;..." to include in what will be committed)
+#
+#       pset1/test.txt
+no changes added to commit (use "git add" and/or "git commit -a")
+</pre>
+<p><code>git status</code> is a good overview, and its parenthetical comments are helpful too. Its most valuable output is the “<code>Untracked files</code>” section. This tells you which files in your working copy have no equivalents in the version repository. Forgetting to <code>git add</code> a file is one of the most common git errors. Running <code>git status</code> once in a while and checking the untracked files section is good practice for everyone.
+</p>
+<h2> <span class="mw-headline" id="Partial_commits"> Partial commits </span></h2>
+<p>Sometimes you don’t want to commit your entire working copy. For instance, maybe your <code>README.txt</code> is ready to share with your partner, but your <code>m61.c</code> is broken and currently crashes all the tests.
+</p><p>Tell <code>git commit</code> the files you want to commit, instead of passing <code>-a</code>, and it will commit just the named files. For instance:
+</p>
+<pre>% git commit README.txt</pre>
+<p>Alternately, you can stage files for commit using <code>git add</code>. Just as when you <a href="#Adding_files">add files</a>, this tells git that the <i>next</i> commit, whenever it happens, should include the changes currently in <code>README.txt</code>:
+</p>
+<pre>% git add README.txt</pre>
+<p><code>git status</code> will show that <code>README.txt</code>’s change has been staged. It also says how you could unstage the file.
+</p>
+<pre>% git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 6 commits.
+#
+# Changes to be committed:
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+#
+#       modified:   pset1/README.txt
+#
+# Untracked files:
+#   (use "git add &lt;file&gt;..." to include in what will be committed)
+#
+#       pset1/test.txt
+</pre>
+<p>Once you’re ready, <code>git commit</code> will commit all staged changes.
+</p><p>Finally, the wicked cool <code>git add -p</code> interactively prompts you to select <i>individual modifications</i> to stage.
+</p>
+<h2> <span class="mw-headline" id="Remotes"> Remotes </span></h2>
+<p>A git repository can associate with other repositories called <i>remotes</i>. Remotes are stored elsewhere—for example, on <a rel="nofollow" class="external text" href="https://github.com/">github</a>, or <a rel="nofollow" class="external text" href="http://code.seas.harvard.edu/">code.seas.harvard.edu</a>.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git012.png" class="image"><img alt="Git012.png" src="2013_Git%20-%20CS61Wiki_files/Git012.png" height="400" width="560"></a>
+</p><p>For example, in CS 61, you make commits in the repository on your
+ CS50 Appliance. But to turn in your code, and to protect your work 
+against Appliance problems, you save your changes into a git repository 
+hosted on <a rel="nofollow" class="external text" href="http://code.seas.harvard.edu/">code.seas.harvard.edu</a>. Your Appliance repository sees your code.seas repository as a remote.
+</p><p>The <code>git remote</code> command lists a repository’s remotes. If you used <code>git clone</code> to create your repository, you will see at least one remote, called <code>origin</code>:
+</p>
+<pre>% git remote
+origin
+</pre>
+<p>The <code>origin</code> remote keeps track of the original source of 
+your repository. In CS 61, this will most likely be a repository hosted 
+on code.seas.harvard.edu.
+</p><p>You can add a new remote whenever you like using <code>git remote add</code>. For instance, add a remote “<code>handout</code>” for CS 61 handout code:
+</p>
+<pre>% git remote add handout git://code.seas.harvard.edu/cs61/cs61-psets.git
+</pre>
+<p>Your git repository maintains a shadow copy of all the data in each remote.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git013.png" class="image"><img alt="Git013.png" src="2013_Git%20-%20CS61Wiki_files/Git013.png" height="400" width="560"></a>
+</p><p>The remote name, such as <code>origin</code>, refers to the shadow copy.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git014.png" class="image"><img alt="Git014.png" src="2013_Git%20-%20CS61Wiki_files/Git014.png" height="400" width="560"></a>
+</p><p>Since git stores shadow copies of remotes, it can also display 
+their contents. Many of the commands we’ve seen work well on remotes. 
+For example, say you have a <code>handout</code> remote. Then try:
+</p>
+<dl><dt><code>git log handout/master</code>
+</dt><dd>Print log of commits to the <code>handout</code> remote’s <code>master</code> branch.
+</dd><dt><code>git diff handout/master master</code>
+</dt><dd>Compare the most recent handout code (<code>handout/master</code>) with your most recent commit (<code>master</code>).
+</dd></dl>
+<p>Shadow copies get stale as remote repositories change.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git015.png" class="image"><img alt="Git015.png" src="2013_Git%20-%20CS61Wiki_files/Git015.png" height="400" width="560"></a>
+</p><p>The <code>git fetch</code> command updates your repository’s shadow copy from the actual remote repository.
+<code>git fetch REMOTENAME</code> updates your shadow copy of the <code>REMOTENAME</code> remote; <code>git fetch --all</code> updates all remotes.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git016.png" class="image"><img alt="Git016.png" src="2013_Git%20-%20CS61Wiki_files/Git016.png" height="400" width="560"></a>
+</p><p><code>git fetch</code> <b>does not change your version repository.</b> It only changes shadow copies. Your working copy, and your repository’s version history, remain unchanged.
+</p>
+<h2> <span class="mw-headline" id="Merges"> Merges </span></h2>
+<p>A <i>merge</i> joins development streams together. For instance:
+</p>
+<ul><li> You and a partner split up work on a problem set, and commit 
+your work to different repositories. A merge can combine your changes.
+</li><li> The instructors make changes to a problem set, and you have 
+already begun work. A merge will combine your changes with the 
+instructors’ updates.
+</li></ul>
+<p>Let’s take an example: <code>git merge origin/master</code>. This merges the current branch with <code>origin/master</code>, which is the current value of the <code>master</code> branch in the shadow copy of the <code>origin</code> remote.
+</p><p>First, git checks where the two repositories diverged. Let’s say the commits look like this:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git017.png" class="image"><img alt="Git017.png" src="2013_Git%20-%20CS61Wiki_files/Git017.png" height="400" width="560"></a>
+</p><p>The common commits are b7dde5 and eb519b. After that, the histories diverge. Git thinks of these histories as a branched graph.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git018.png" class="image"><img alt="Git018.png" src="2013_Git%20-%20CS61Wiki_files/Git018.png" height="400" width="560"></a>
+</p><p>The <code>git merge origin/master</code> command combines the branches into a new commit that covers <i>both</i> histories.
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git019.png" class="image"><img alt="Git019.png" src="2013_Git%20-%20CS61Wiki_files/Git019.png" height="400" width="560"></a>
+</p><p>If you look at <code>git log</code> after merging, you can see both histories:
+</p>
+<pre>commit b0ce5ed01c688921ed0eae69b6bd571619935fad
+Merge: 60c4bc9 d35aa90
+Author: Eddie Kohler &lt;kohler@seas.harvard.edu&gt;
+Date:   Thu Oct 4 14:25:55 2012 -0400
+
+    Merge branch 'master' of git@code.seas.harvard.edu:cs61/cs61-psets.git
+
+</pre>
+<p><code>git merge</code> is a form of <code>git commit</code>; it will allow you to edit the merge message if you like.
+</p>
+<h2> <span class="mw-headline" id="Conflicts"> Conflicts </span></h2>
+<p>In an ideal world, all merges would complete automatically. But in 
+the real world, sometimes the merged branches edit exactly the same 
+portion of the code. Git is not smart enough to figure out which edits 
+to use, so it stops and reports a <i>conflict.</i> You must edit the files to <i>resolve</i> the conflict by hand.
+</p><p>Here’s an example failed merge:
+</p>
+<pre>% git merge origin/master
+Auto-merging pset1/test004.c
+CONFLICT (content): Merge conflict in pset1/test004.c
+Auto-merging pset1/test003.c
+CONFLICT (content): Merge conflict in pset1/test003.c
+Automatic merge failed; fix conflicts and then commit the result.
+</pre>
+<p>ALL CAPS ARE SCARY, WHAT SHOULD WE DO? Well, maybe you don’t want to do a merge after all! Type <code>git merge --abort</code>
+ and git will restore the pre-merge version. But probably you want to 
+resolve the conflict. To do this, you need to know how git shows 
+conflicts. Here’s the conflicted state of <code>pset1/test003.c</code>:
+</p>
+<pre>#include "m61.h"
+#include &lt;stdio.h&gt;
+// test003: active allocation counts.
+
+int main() {
+    void *ptrs[10];
+    for (int i = 0; i &lt; 10; ++i)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+        ptrs[i] = malloc(i | 1);
+=======
+        ptrs[i] = malloc(i + 1);
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/master
+    for (int i = 0; i &lt; 5; ++i)
+        free(ptrs[i]);
+    m61_printstatistics();
+}
+
+//! malloc count: active          5   total         10   fail       &nbsp;???
+//! malloc size:  active       &nbsp;???   total       &nbsp;???   fail       &nbsp;???
+</pre>
+<p>The <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code> and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> lines are <i>conflict markers.</i> Git adds conflict markers around the conflicting edits. The text between <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and <code>=======</code> represents your edits—the ones in <code>HEAD</code> (git’s name for the current branch). The text between <code>=======</code> and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> represents the other branch’s edits—here, the ones in <code>origin/master</code>.
+</p><p>To resolve a conflict, just choose which edit to keep and delete 
+the other edit. For example, to keep your edit, remove the markers and 
+the <code>origin/master</code> code, to produce:
+</p>
+<pre>... for (int i = 0; i &lt; 10; ++i)
+        ptrs[i] = malloc(i | 1);
+    for (int i = 0; i &lt; 5; ++i)...</pre>
+<p>You might also want to create a new version that combines the edits.
+</p>
+<pre>... for (int i = 0; i &lt; 10; ++i)
+        ptrs[i] = malloc((i | 1) + 1);
+    for (int i = 0; i &lt; 5; ++i)...</pre>
+<p>Once you’ve edited all the conflicts (use <code>git status</code> to check your work), commit the result with <code>git commit -a</code>. (Just like the merge suggested!) The commit message is pre-loaded with merge information.
+</p><p>Conflict resolution can get quite hairy. Luckily, there are lots of visual tools available for editing conflicts; try <code>git mergetool</code>. We also find that <code>git rebase</code> is better at handling certain types of conflicts, but a description of rebasing will have to wait.
+</p>
+<h2> <span class="mw-headline" id="Fast_forwards"> Fast forwards </span></h2>
+<p>Merging has a best case: one of the branches is a subset of the other. For example, consider <code>git merge origin/master</code> with these commits:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git020.png" class="image"><img alt="Git020.png" src="2013_Git%20-%20CS61Wiki_files/Git020.png" height="400" width="560"></a>
+</p><p>The <code>origin/master</code> history is a subset of the <code>master</code> history:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git021.png" class="image"><img alt="Git021.png" src="2013_Git%20-%20CS61Wiki_files/Git021.png" height="400" width="560"></a>
+</p><p>There’s nothing for the merge to do, so it will report “<code>Already up-to-date.</code>”
+</p><p>These commits are also easy to merge:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git022.png" class="image"><img alt="Git022.png" src="2013_Git%20-%20CS61Wiki_files/Git022.png" height="400" width="560"></a>
+</p><p>Here, the <code>master</code> history is a subset of the <code>origin/master</code> history. A <code>git merge origin/master</code> command will <i>fast-forward</i> the <code>master</code> branch to the latest version on <code>origin/master</code>, without creating a new commit:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git023.png" class="image"><img alt="Git023.png" src="2013_Git%20-%20CS61Wiki_files/Git023.png" height="400" width="560"></a>
+</p><p>A fast-forward can never create a conflict.
+</p>
+<h2> <span class="mw-headline" id="Pulls"> Pulls </span></h2>
+<p>The convenience command <code>git pull</code> combines <code>git fetch</code> and <code>git merge</code>. The command <code>git pull ORIGIN BRANCH</code> means almost the same thing as <code>git fetch ORIGIN; git merge ORIGIN/BRANCH</code>.
+</p>
+<h2> <span class="mw-headline" id="Pushes"> Pushes </span></h2>
+<p><code>git push</code> is the inverse of <code>git fetch</code>. Where <code>git fetch</code> updates a shadow repository from the remote, <code>git push</code> takes your <em>local</em> version and copies it to a <em>remote</em> repository. You use this to save your local changes in a more permanent way (for example, on code.seas.harvard.edu).
+</p><p>The command <code>git push REMOTE BRANCH</code> will take your local <code>BRANCH</code> and push a copy of it onto <code>REMOTE</code>’s <code>BRANCH</code>. For example, <code>git push origin master</code> pushes your local <code>master</code> branch to the <code>origin</code> remote’s <code>master</code> branch. For instance, from this state:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git024.png" class="image"><img alt="Git024.png" src="2013_Git%20-%20CS61Wiki_files/Git024.png" height="400" width="560"></a>
+</p><p><code>git push origin master</code> would do this:
+</p><p><a href="http://cs61.seas.harvard.edu/wiki/File:Git025.png" class="image"><img alt="Git025.png" src="2013_Git%20-%20CS61Wiki_files/Git025.png" height="400" width="560"></a>
+</p><p>Now <code>origin/master</code> is the same commit as the local <code>master</code>.
+</p><p>Normally <code>git push</code> will reject every attempt to push that is not a <a href="#Fast_forwards">fast-forward</a>. If it complains, you need to merge first with the remote branch, for instance by <code>git pull origin master</code>. Push again after completing the merge.
+</p><p>Pushes don’t consider the working copy at all, they only copy committed versions.
+</p>
+<h1> <span class="mw-headline" id="More"> More </span></h1>
+<p>This just scratches the surface of what git can do, but should offer 
+you the conceptual tools and enough basic commands to get a lot done. 
+For more on git, check out some of the resources available online:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://git-scm.com/">The git home page</a>
+</li><li> <a rel="nofollow" class="external text" href="http://git-scm.com/documentation">Git documentation</a>—especially the <a rel="nofollow" class="external text" href="http://git-scm.com/book">book</a>
+</li><li> <a rel="nofollow" class="external text" href="http://git-scm.com/videos">Git tutorial videos!</a>
+</li><li> <a rel="nofollow" class="external text" href="http://ndpsoftware.com/git-cheatsheet.html">A git cheatsheet</a>
+</li><li> <a rel="nofollow" class="external text" href="https://spaces.seas.harvard.edu/display/USERDOCS/Introduction+To+GIT">SEAS’s git introduction</a> and <a rel="nofollow" class="external text" href="http://acops.seas.harvard.edu/git-workshop/workshop.s5.html">slides</a>
+</li><li> Commands I’d like to describe in this document: <code>git branch</code>, <code>git stash</code>, <code>git rebase</code>, <code>git rebase -i</code>,  <code>git grep</code>, <code>git reset</code>, <code>git tag</code>, <code>git show</code>, <code>git commit --amend</code>.
+</li><li> Other cool commands: <code>git bisect</code>.
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 237/1000000
+Preprocessor generated node count: 438/1000000
+Post‐expand include size: 167/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:340-0!*!0!!en!2!* and timestamp 20140607014345 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://cs61.seas.harvard.edu/cs61wiki/index.php?title=2013/Git&amp;oldid=2589">http://cs61.seas.harvard.edu/cs61wiki/index.php?title=2013/Git&amp;oldid=2589</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks catlinks-allhidden"></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<!-- header -->
+			<div id="mw-head">
+				
+<!-- 0 -->
+<div id="p-personal" role="navigation" class="">
+	<h3>Personal tools</h3>
+	<ul>
+<li id="pt-login"><a href="http://cs61.seas.harvard.edu/cs61wiki/index.php?title=Special:UserLogin&amp;returnto=2013%2FGit" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+
+<!-- /0 -->
+				<div id="left-navigation">
+					
+<!-- 0 -->
+<div id="p-namespaces" role="navigation" class="vectorTabs">
+	<h3>Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://cs61.seas.harvard.edu/wiki/2013/Git" title="View the content page [alt-shift-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://cs61.seas.harvard.edu/cs61wiki/index.php?title=Talk:2013/Git&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+				</div>
+				<div id="right-navigation">
+					
+<!-- 0 -->
+<div id="p-views" role="navigation" class="vectorTabs">
+	<h3>Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://cs61.seas.harvard.edu/wiki/2013/Git">Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://cs61.seas.harvard.edu/cs61wiki/index.php?title=2013/Git&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://cs61.seas.harvard.edu/cs61wiki/index.php?title=2013/Git&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet">
+	<h3><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/cs61wiki/index.php" id="searchform">
+				<div>
+			<input placeholder="Search" autocomplete="off" name="search" title="Search CS61Wiki [alt-shift-f]" accesskey="f" id="searchInput" type="search">			<input name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" type="submit">			<input name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" type="submit">					<input name="title" value="Special:Search" type="hidden">
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+				</div>
+			</div>
+			<!-- /header -->
+			<!-- panel -->
+			<div id="mw-panel">
+				<!-- logo -->
+					<div id="p-logo" role="banner"><a style="background-image: url(/cs61wiki/skins/common/images/cs61hello.jpg);" href="http://cs61.seas.harvard.edu/wiki/2013/Home" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" role="navigation" id="p-navigation">
+	<h3>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://cs61.seas.harvard.edu/wiki/2013/Home" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+			<li id="n-portal"><a href="http://cs61.seas.harvard.edu/wiki/CS61Wiki:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-currentevents"><a href="http://cs61.seas.harvard.edu/wiki/CS61Wiki:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-recentchanges"><a href="http://cs61.seas.harvard.edu/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="http://cs61.seas.harvard.edu/wiki/Special:Random" title="Load a random page [alt-shift-x]" accesskey="x">Random page</a></li>
+			<li id="n-help"><a href="http://cs61.seas.harvard.edu/wiki/Help:Contents" title="The place to find out">Help</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal" role="navigation" id="p-tb">
+	<h3>Toolbox</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://cs61.seas.harvard.edu/wiki/Special:WhatLinksHere/2013/Git" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://cs61.seas.harvard.edu/wiki/Special:RecentChangesLinked/2013/Git" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="http://cs61.seas.harvard.edu/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="http://cs61.seas.harvard.edu/cs61wiki/index.php?title=2013/Git&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="http://cs61.seas.harvard.edu/cs61wiki/index.php?title=2013/Git&amp;oldid=2589" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="http://cs61.seas.harvard.edu/cs61wiki/index.php?title=2013/Git&amp;action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+			<!-- /panel -->
+		</div>
+		<!-- footer -->
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 5 September 2013, at 21:40.</li>
+											<li id="footer-info-viewcount">This page has been accessed 3,691 times.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://cs61.seas.harvard.edu/wiki/CS61Wiki:Privacy_policy" title="CS61Wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://cs61.seas.harvard.edu/wiki/CS61Wiki:About" title="CS61Wiki:About">About CS61Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="http://cs61.seas.harvard.edu/wiki/CS61Wiki:General_disclaimer" title="CS61Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="2013_Git%20-%20CS61Wiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" height="31" width="88"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","skins.vector.js"], null, true);
+}</script>
+<script src="2013_Git%20-%20CS61Wiki_files/load_005.php"></script>
+<!-- Served in 0.239 secs. -->
+	
+
+<div class="suggestions" style="display: none; font-size: 13.3333px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
