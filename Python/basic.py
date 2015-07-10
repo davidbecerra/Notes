@@ -68,7 +68,7 @@ def create_ball(space):
   ball_shape.color = THECOLORS["green"]
   ball_shape.collision_type = COLLTYPE_BALL
   ball_shape.friction = 0.94
-  ball_body.position = (200, g_height * 0.8)
+  ball_body.position = (g_width * 0.3, g_height * 0.8)
   ball_body.start_position = pymunk.Vec2d(ball_body.position)
   ball_body.is_attached = False
   space.add(ball_body, ball_shape)
