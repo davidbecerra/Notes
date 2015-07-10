@@ -24,14 +24,9 @@ If you see
 then the package was not properly installed.
 
 ## Installing Pygame
-Unfortunately, installing pygame on Windows is not as easy as pymunk. For some reason, pip does not seem to find the pygame package. Here is a work around that seems to work (not too sure why). **NOTE**: You may be able to get it working without PySDL2 but I have not checked this myself.
+Unfortunately, installing pygame on Windows is not as easy as pymunk (only slightly harder). For some reason, pip does not seem to find the pygame package. Here is a work around that seems to work. 
 
-#### Install PySDL2 and Wheels
-Install the PySDL2 package using pip:
-
-    pip install PySDL2
-
-You can also download and install it manually [here](https://pypi.python.org/pypi/PySDL2).
+#### Install Wheels
 
 We are going to install pygame as a wheel file. As stated [here](https://pypi.python.org/pypi/wheel), "A wheel is a ZIP-format archive with a specially formatted filename and the .whl extension". Therefore we need to install the wheel Python package.
 
