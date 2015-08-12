@@ -23,6 +23,18 @@ If you see
 
 then the package was not properly installed.
 
+### Compiling Chipmunk in Release Mode
+The Chipmunk code that comes with the pymunk library is compiled in debug mode. Therefore, whenever you run pymunk code, there are several debug pring statements that occur from the Chipmunk code. The only way to remove these print statements is to compile Chipmunk in release mode. Luckily, the [pymunk website](http://pymunk.readthedocs.org/en/latest/installation.html#compile-chipmunk) outlines how to do this. However, for completeness, I will go through the steps to do this in Windows here.
+
+Download and install the TDM-GCC package [here](http://tdm-gcc.tdragon.net/). This package comes with a GCC compiler for Windows which we'll need to compile the Chipmunk C code. Theoretically, any GCC compiler should work; however I have only had success with TDM-GCC.
+
+Once the compiler is installed, download the pymunk source code from its github
+page [here](https://github.com/viblo/pymunk). Really we just need the Chipmunk source code located in the `chipmunk_src` directory as well as `setup.py`. Unforunately, we'll need to download/clone the entire pymunk repository.
+
+In the repository directory on your local machine, run the following command in the terminal:
+
+        > python setup.py build_chipmunk --compiler=mingw32 --release
+
 ## Installing Pygame
 Unfortunately, installing pygame on Windows is not as easy as pymunk (only slightly harder). For some reason, pip does not seem to find the pygame package. Here is a work around that seems to work. 
 
