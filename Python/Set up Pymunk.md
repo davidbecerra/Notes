@@ -37,7 +37,7 @@ In the repository directory on your local machine, run the following command in 
 
         > python setup.py build_chipmunk --compiler=mingw32 --release
 
-After the compilation is complete, replace all the files in `<Path to Python>\Python27\Lib\site-packages\pymunk` with the corresponding files in the `pymunk` directory from repository you manually downloaded.
+After the compilation is complete, replace all the files in `<Path to Python>\Python27\Lib\site-packages\pymunk` with the corresponding files in the `pymunk` directory in the repository you manually downloaded.
 
 ## Installing Pygame
 Unfortunately, installing pygame on Windows is not as easy as pymunk (only slightly harder). For some reason, pip does not seem to find the pygame package. Here is a work around that seems to work. 
